@@ -11,7 +11,7 @@
 def word_count():
     sentence = "python exam"
     words = sentence.split()
-    word_count = {}
+    word_count = {} 
     for word in words:
         if word in word_count:
             word_count[word] += 1
