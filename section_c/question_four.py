@@ -29,17 +29,19 @@ b=int(input("Enter the value of b: "))
 sum_of_two_numbers(3, 4)
 print("The sum of the two numbers a and b is {0}".format(sum_of_two_numbers(a , b)))
 
-# 4) iv)
+# 4) iv) AND 4) V)
 class Car:
-    def __init__(self, brand, color):
+    def __init__(self, brand, name, color):
         self.brand = brand
+        self.name = name
         self.color = color
 
     def start_engine(self):
-         print(f"The engine of the {self.color} {self.brand} has started.")
+         print(f"The engine of the {self.brand}, {self.name} of color {self.color} has started.")
 
-my_car = Car("Range Rover", "Golden")
+my_car = Car('Jaguar Land Rover',"Range Rover", "Golden")
 print(f"My car brand is: {my_car.brand}")
+print(f"My car name is: {my_car.name}")
 print(f"My car color is: {my_car.color}")
 
 my_car.start_engine()
